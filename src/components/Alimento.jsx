@@ -1,6 +1,6 @@
-const Food = ({food}) => {
+const Food = ({alimento}) => {
     
-    let {nombre, precio, descripcion } = food;
+    let {nombre, precio, descripcion } = alimento;
     let pesoMexicano = new Intl.NumberFormat('es-MX', {
         style: 'currency',
         currency: 'MXN',

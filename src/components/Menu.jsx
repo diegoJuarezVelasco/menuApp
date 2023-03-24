@@ -27,7 +27,7 @@ const Menu = () => {
           {alimentos.map((alimento, index) =>
             <Alimento
               key={index}
-              food={alimento}
+              alimento={alimento}
             />
           )}
         </div>
@@ -37,11 +37,10 @@ const Menu = () => {
           <h1>Bebidas</h1>
         </div>
         <div>
-
           {bebidas.map((bebida, index) =>
             <Alimento
               key={index}
-              food={bebida}
+              alimento={bebida}
             />
           )}
         </div>
