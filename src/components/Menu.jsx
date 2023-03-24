@@ -5,7 +5,14 @@ import Header from "./header";
 
 const Menu = () => {
 
-  let menu = useFetch('https://stratech.digital/API/menu.json');
+  let menu = useFetch('https://stratech.digital/API/menu.json', {
+    mode: 'cors',
+    headers: {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+  );
   let alimentos = [];
   let bebidas = [];
 
