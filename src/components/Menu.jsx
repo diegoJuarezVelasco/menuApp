@@ -5,7 +5,7 @@ import Header from "./header";
 
 const Menu = () => {
 
-  let menu = useFetch('http://3.140.212.226/pruebasAPI/menu.json');
+  let menu = useFetch('https://stratech.digital/API/menu.json');
   let alimentos = [];
   let bebidas = [];
 
