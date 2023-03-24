@@ -1,0 +1,82 @@
+/*Estilos generales*/
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+}
+h1, h2, h3 {
+  font-family: "Bebas Neue";
+  color: rgb(241, 196, 15);
+  margin: 0;
+}
+p {
+  font-family: 'Lato';
+  color: #fff;
+  margin: 0;
+}
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+
+  padding: 1% 0;
+}
+/*Menu*/
+
+.menu {
+  height: 100vh;
+  padding: 5% 0;
+  display: flex;
+  justify-content: space-around;
+  background-image: url('./assets/menu-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.alimentos-container {
+  width: 40%;
+  border: 3px solid rgb(241, 196, 15);
+  border-radius: 5px;
+}
+.alimentos-container div {
+  padding-left: 2%;
+}
+.menu-title {
+  width: 50%;
+  margin: 0 auto; 
+  background-color: rgb(241, 196, 15);
+  border-radius: 0px 0px 5px;
+  
+}
+.menu-title h1 {
+  text-align: center;
+  color: #000;
+}
+.alimento {
+  margin: 5% 0;
+  width: 90%;
+}
+.nombre-alimento {
+  font-size: 1.8em;
+  margin-bottom: 1%;
+}
+.descripcion-alimento {
+  margin-bottom: 1%;
+}
+.precio {
+  font-weight: 700;
+  color:  #fe4918;
+}
+@media only screen and (max-width: 1200px) {
+  .menu {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .alimentos-container {
+    width: 80%;
+    margin: 2%;
+  }
+  
+}
